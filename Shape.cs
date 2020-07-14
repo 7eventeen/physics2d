@@ -33,11 +33,6 @@ namespace physics
             }
         }
 
-        public void RectangleSize(Vector2f rectSize)
-        {
-            this.rectSize = rectSize;
-        }
-
         public int GetShapeId()
         {
             return shapeId;
@@ -47,8 +42,35 @@ namespace physics
         {
             return shapeName;
         }
-        
-        public
+
+        public Vector2f GetCenterPos()
+        {
+            return centerPos;
+        }
+
+        public void SetCenterPos(Vector2f centerPos)
+        {
+            this.centerPos = centerPos;
+        }
+
+        public Vector2f GetRectangleSize()
+        {
+            if (rectSize != null)
+            {
+                return rectSize;
+            }
+            throw new Exception("rectSize isn't exist!");
+        }
+
+        public void SetRectangleSize(Vector2f rectSize)
+        {
+            this.rectSize = rectSize;
+        }
+
+
+
+
+
 
         
     }
