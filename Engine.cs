@@ -7,10 +7,8 @@ using System.Text;
 
 namespace physics
 {
-    public class MainLoop
+    public class Engine
     {
-
-        
 
         RenderWindow app;
         Graphics g;
@@ -52,9 +50,9 @@ namespace physics
 
                 // Update the window
 
-                g.DrawCircle(100, new Vector2f(10, 200));
-
-                g.DrawRectangle(new Vector2f(100, 200), new Vector2f(300, 400));
+                Shape rect = new Shape("rectangle", new Vector2f(100, 100));
+                rect.SetRectangleSize(new Vector2f(300, 300));
+                g.DrawShape(rect);
 
                 app.Display();
 

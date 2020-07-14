@@ -6,7 +6,7 @@ namespace physics
     {
         static void Main(string[] args)
         {
-            MainLoop mainLoop = new MainLoop();
+            Engine mainLoop = new Engine();
             mainLoop.Run();
         }
     }
