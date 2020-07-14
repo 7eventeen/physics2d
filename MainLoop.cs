@@ -30,7 +30,7 @@ namespace physics
 
         private void CreateWindow()
         {
-            app = new RenderWindow(new VideoMode(800, 600), "SFML Works");
+            app = new RenderWindow(new VideoMode(1024, 768), "SFML Works");
             app.Closed += new EventHandler(OnClose);
 
             g = new Graphics(app);
@@ -53,7 +53,12 @@ namespace physics
                 // Update the window
 
                 g.DrawCircle(100, new Vector2f(10, 200));
+
+                g.DrawRectangle(new Vector2f(100, 200), new Vector2f(300, 400));
+
                 app.Display();
+
+     
 
             
 

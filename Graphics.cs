@@ -21,5 +21,12 @@ namespace physics
             circle.Position = pos;
             app.Draw(circle);
         }
+
+        public void DrawRectangle(Vector2f size, Vector2f pos)
+        {
+            RectangleShape rectangle = new RectangleShape(size);
+            rectangle.Position = pos;
+            app.Draw(rectangle);
+        }
     }
 }
